@@ -1,0 +1,83 @@
+/* imports */
+@font-face {
+    font-family: SupplyMono;
+    font-weight: normal;
+    src: url('fonts/Supply-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: SupplyMono;
+    font-weight: 100;
+    src: url('fonts/Supply-Light.otf') format("opentype");
+}
+
+body {
+    font-family: "SupplyMono";
+}
+
+
+main {
+    position: relative;
+    border: 3px solid hsl(180, 20%, 82%);
+    background-color: hsl(180, 20%, 92%);
+    padding: 40px 30px 25px 30px;
+    margin: 100px;
+    height: 1000px;
+}
+
+  .reg {
+    background-color: hsl(180, 20%, 9%);
+    width: auto;
+    height: 21px;
+    margin: 0px 20% 17px 20%;
+    padding: 10px;
+    color: azure;
+  }
+  .relativePositioning {
+    position: relative;
+    left: 50px;
+  }
+
+  .fixedPositioning {
+    background-color: hsl(180, 20%, 22%);
+    position: fixed;
+    margin: 0px 35% 17px 60%;
+    width: 100px;
+  }
+  .absolutePositioning {
+    background-color: hsl(180, 20%, 35%);
+    position: absolute;
+    width: 100px;
+    right: 0px;
+    bottom: 0px;
+  
+  }
+  .positive { 
+    background-color: black;
+    color: whitesmoke;
+  }
+ .negative { 
+    background-color: #ff5500d1;
+    color: whitesmoke;
+  }
+ .huge {
+     font-size: xx-large;
+ }
+
+#firstName {
+     font-weight: bold;
+     font-size: xx-large;
+     color:blueviolet;
+ }
+ img[src="https://media.giphy.com/media/Z890hxb6fSrbG/giphy.gif"] {
+border-radius: 50px;
+}
+[data]{
+font-weight:bold;
+font-size: xx-large;
+color: blue;
+}
+
+[data="myOwnId"] {
+background-color: bisque;
+}
