@@ -8,14 +8,42 @@
 
     <link href="style.css" rel="stylesheet">
 </head>
+<div class="reg fixedPositioning"><h1>Content 4</h1>
+    <p class="caption">fixed — always outside wrapper</p>
+</div>
 <main> 
-    <div class="reg">Content 1</div>
-    <div class="reg relativePositioning">Content 2</div>
-    <div class="reg">Content 3</div>
-    <div class="reg fixedPositioning">Content 4</div>
-    <div class="reg">Content 5</div>
-    <div class="absolutePositioning">Content 6</div>
-    <div class="reg" data="yes">Content 7</div> 
+    <div class="reg"><h1>Content 1</h1>
+        <p class="caption">reg</p>
+    </div>
+    <div class="reg relativePositioning"><h1>Content 2</h1>
+        <p class="caption">relative to reg</p>
+    </div>
+    <div class="reg"><h1>Content 3</h1>
+        <p class="caption">reg</p>
+    </div>
+
+    <div class="reg"><h1>Content 5</h1>
+        <p class="caption">reg</p>
+    </div>
+    <div class="reg absolutePositioning"><h1>Content 6</h1>
+        <p class="caption">absolute<br>— inside wrapper</p>
+    </div>
+    <div class="reg" data="yes"><h1>Content 7</h1>
+        <p class="caption">reg<br>— with own type</p>
+    </div> 
+    <div class="reg stickyPositioning"><h1>Content 8</h1>
+        <p class="caption">sticky<br>— inside wrapper</p>
+    </div> 
 </main>
+<div class="reg absolutePositioning"><h1>Content 9</h1>
+    <p class="caption">absolute<br>— outside wrapper</p>
+</div>
+<div class="reg stickyPositioning"><h1>Content 10</h1>
+    <p class="caption">sticky<br>— outside wrapper</p>
+</div> 
+
+<main>&nbsp;</main>
+
+
 </body>
 </html>
