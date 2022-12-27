@@ -1,0 +1,52 @@
+/* imports */
+@font-face {
+  font-family: SupplyMono;
+  font-weight: normal;
+  src: url('fonts/Supply-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: SupplyMono;
+  font-weight: 100;
+  src: url('fonts/Supply-Light.otf') format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "SupplyMono";
+}
+
+header {
+  
+  display: fixed;
+  height: 20px;
+  background-color: black;
+  color: white;
+  top: 0px;
+  left: 0px;
+  padding: 14px;
+  width:"100%";
+}
+
+.headercontainer {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.menuitem {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+
+}
+
+.alignright {
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+
+
