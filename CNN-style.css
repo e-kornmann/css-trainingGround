@@ -1,43 +1,212 @@
 /* imports */
 @font-face {
-  font-family: SupplyMono;
+  font-family: Helvetica Neue;
   font-weight: normal;
-  src: url('fonts/Supply-Regular.otf') format("opentype");
+  src: url('fonts/HelveticaNeue-Regular.otf') format("opentype");
 }
 
 @font-face {
-  font-family: SupplyMono;
+  font-family: Helvetica Neue;
   font-weight: 100;
-  src: url('fonts/Supply-Light.otf') format("opentype");
+  src: url('fonts/HelveticaNeue-Light.otf') format("opentype");
 }
+
+@font-face {
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  src: url('fonts/HelveticaNeue-Medium.otf') format("opentype");
+}
+
+
+  @font-face {
+    font-family: Helvetica Neue;
+    font-weight: bold;
+    src: url('fonts/HelveticaNeue-Bold.otf') format("opentype");
+
+}
+
 
 body {
   margin: 0;
-  font-family: "SupplyMono";
+  font-family: Helvetica Neue,Helvetica,Arial;
+  font-weight: normal;
+   -webkit-font-smoothing: antialiased;
+   color: #151515;
+  }
+
+.logo {
+  position: relative;
+  bottom: 10px;
+  width: 40px;
+  }
+
+svg {
+  color: rgb(249, 249, 249);
 }
 
-header {
+
+
+
+#CNNlogo {
+  position: relative;
+  bottom:  10px;
+  background-image: url("Images/CNN_International_logo.svg");
+  padding: 0px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+}
+
+
+.icon {
+  position: relative;
+  display: block;
+  bottom:  2px;
+  padding: 0px;
+  padding-right: 5px;
+  height: 25px;
+  width: 25px;
+  margin: 0px;
+}
+
+.login { 
+  position: relative;
+  display: block;
+  bottom:  5px;
+ font-weight: 300 !important;
+ border-radius: 8px;
+ border: 1px solid rgb(236, 236, 236);
+ height: 25px;
+ padding: 4px 6px 0px 6px !important;
+ 
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.1em;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  line-height: 1.2em;
+}
+
+h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 1.2em;
+}
+
+
+h4 {
+  border-top: 1px solid rgb(208, 208, 208);
+  font-weight: 100;
+  padding-top: 7px;
+  margin-top: 8px;
+  margin-bottom: 10px;
   
-  display: fixed;
+}
+
+a, a:link, a:visited  {
+   text-decoration: none;
+   color: rgb(20, 19, 19);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #E30000;
+}
+
+
+h5 {
+   font-size: 14px;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 7px;
+  line-height: 1.45em;
+  letter-spacing: 0.03em; 
+ }
+
+.ullinks a {
+  text-decoration: underline 2px solid #eaeaea;  
+  text-underline-offset: 3px;
+}
+
+.ullinks a:link {
+  text-decoration: underline 2px solid #eaeaea;  
+  text-underline-offset: 3px;
+}
+
+.ullinks a:visited {
+  text-decoration: underline 2px solid #eaeaea;  
+  text-underline-offset: 3px;
+}
+
+.ullinks a:link {
+  text-decoration: underline 2px solid #eaeaea;  
+  text-underline-offset: 3px;
+}
+
+.ullinks a:hover {
+  text-decoration: none;
+  color: #E30000;
+}
+
+   ul {
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  li { 
+    padding-left: 0px; 
+  }
+  
+  li::before {
+    content: "• "; /* Insert content that looks like bullets */
+    font-weight: bold;
+  }
+/* header */
+
+header {
+  position: fixed;
   height: 20px;
-  background-color: black;
+  background-color:#151515;
   color: white;
   top: 0px;
   left: 0px;
-  padding: 14px;
-  width:"100%";
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid gray;
 }
 
-.headercontainer {
+nav {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1300px;
 }
 
 .menuitem {
   float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 12px;
+  padding: 0px 15px 0px 15px;
+  font-size: 15px;
+  font-weight: 100;
+  height: 25px;
+  letter-spacing: 0.05em; 
 
 }
 
@@ -48,5 +217,149 @@ header {
 }
 
 
+/* main */
+
+main {
+ 
+  padding-top: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  margin-bottom: 0px;
+
+  }
 
 
+article {
+  padding-bottom: 20px;
+}
+
+/* posts */
+
+.imagepost {
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.blogimg {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  object-fit: cover;
+  position: relative;
+  z-index: -2;
+}
+
+.cropfp {
+  object-fit: cover;
+  height: 300px;
+}
+
+
+.crop {
+  object-fit: cover;
+  height: 200px;
+}
+
+.label {
+  background-color: #E30000;
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  text-transform: uppercase;
+  color:aliceblue;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  padding: 8px 13px 8px 13px;  
+  z-index: -1;
+}
+
+
+
+footer { 
+position: relative;
+background-color:rgb(20, 19, 19);
+color: #ffffff;
+padding-top: 80px;
+padding-bottom: 40px;
+bottom: 0px;
+left: 0px;
+width: 100%;
+}
+
+.footeritems {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 2px;
+  padding-right: 20px;
+}
+
+.follow {
+  position: relative;
+  bottom: 2px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 4px 15px 0px 25px;
+  margin-left: 10px;
+  margin-right: 30px;
+  height: 20px;
+}
+
+#followus {
+  float: left;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  position: relative;
+  bottom: 0px;
+  margin-right: 17px;
+}
+
+.socials {
+  position: relative;
+  bottom: 3px;
+  float: left;
+  margin-left: 4px;
+  margin-right: 7px;
+}
+.footeritems a {
+  color: rgb(249, 249, 249);
+}
+
+.footeritems a:link {
+  color: rgb(249, 249, 249);
+}
+
+.footeritems a:visited {
+  color: rgb(249, 249, 249);
+}
+
+.footeritems a:link {
+  color: rgb(249, 249, 249);
+}
+
+.footeritems a:hover {
+  text-decoration: underline 1px solid #eaeaea;  
+  text-underline-offset: 2px;
+}
+
+.credit {
+ clear: both;
+font-size: 12px;
+color: white;
+padding: 40px 15px 15px 0px;
+font-weight: 100;
+line-height: 1.3em;
+letter-spacing: 0.05em; 
+}
+
+
+.hr {
+border-top: 1px solid rgb(94, 94, 94);
+width: 100%;
+margin-top: 30px;
+}
